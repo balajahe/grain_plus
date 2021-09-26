@@ -22,11 +22,11 @@ class _ForeignMarketHomeState extends State<ForeignMarketHome> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Text('|  '),
+            Text('|   '),
             Text('-3000 USD'),
-            Text('  |  '),
-            Text('0 EUP'),
-            Text('  |  '),
+            Text('   |   '),
+            Text('0 EUR'),
+            Text('   |   '),
             Expanded(
               child: TextField(
                 controller: _searchString,
@@ -37,10 +37,10 @@ class _ForeignMarketHomeState extends State<ForeignMarketHome> {
                 ),
               ),
             ),
-            Text('  |'),
+            Text('   |'),
           ],
         ),
-        SizedBox(height: 5),
+        SizedBox(height: 0),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -48,10 +48,12 @@ class _ForeignMarketHomeState extends State<ForeignMarketHome> {
               child: Text('Товарные рынки'),
               onPressed: () {},
             ),
+            SizedBox(width: 2),
             ElevatedButton(
               child: Text('Логистика'),
               onPressed: null,
             ),
+            SizedBox(width: 2),
             ElevatedButton(
               child: Text('Экспедирование'),
               onPressed: null,
@@ -83,8 +85,8 @@ class _ForeignMarketHomeState extends State<ForeignMarketHome> {
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Row(
+                  //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SizedBox(width: 10),
                     Expanded(
                       child: SizedBox(
                         height: 35,
@@ -93,6 +95,7 @@ class _ForeignMarketHomeState extends State<ForeignMarketHome> {
                             locale.get('Create an offer\nand sell'),
                             textAlign: TextAlign.center,
                           ),
+                          style: AppTheme.sellButtonStyle,
                           onPressed: () {},
                         ),
                       ),
@@ -106,11 +109,11 @@ class _ForeignMarketHomeState extends State<ForeignMarketHome> {
                             locale.get('Create an offer\nand buy'),
                             textAlign: TextAlign.center,
                           ),
+                          style: AppTheme.buyButtonStyle,
                           onPressed: () {},
                         ),
                       ),
                     ),
-                    SizedBox(width: 10),
                   ],
                 ),
               ),

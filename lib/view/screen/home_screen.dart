@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: AppTheme.loginBackgroundColor,
       body: Padding(
-        padding: EdgeInsets.only(top: 5, bottom: 0, left: 10, right: 10),
+        padding: EdgeInsets.only(top: 5, bottom: 2, left: 10, right: 10),
         child: _pages[_currentPage],
       ),
       bottomNavigationBar: BottomNavigationBar(

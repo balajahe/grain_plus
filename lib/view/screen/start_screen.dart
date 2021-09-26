@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '/app/app_locale.dart';
-import '../../setting/theme.dart';
+import '/setting/theme.dart';
 import '/view/util/logo.dart';
 import '/view/screen/login_screen.dart';
 
@@ -32,11 +32,13 @@ class StartScreen extends StatelessWidget {
                   children: [
                     ElevatedButton(
                       child: Text(locale.get('LOG IN')),
+                      style: AppTheme.commandButtonStyle,
                       onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => LoginScreen())),
                     ),
                     SizedBox(height: 30),
                     ElevatedButton(
                       child: Text(locale.get('SIGN UP')),
+                      style: AppTheme.commandButtonStyle,
                       onPressed: null,
                     ),
                   ],

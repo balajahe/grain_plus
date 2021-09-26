@@ -129,6 +129,7 @@ class _LoginScreenState extends State<LoginScreen> {
               widthFactor: 0.7,
               child: ElevatedButton(
                 child: Text(locale.get('LOG IN')),
+                style: AppTheme.commandButtonStyle,
                 onPressed: _done,
               ),
             ),

@@ -18,6 +18,6 @@ const localizedValues = <String, Map<String, String>>{
   'Domestic market': {'ru': 'Внутренний рынок'},
   'Create an offer\nand sell': {'ru': 'Создать оффер\nи продать'},
   'Create an offer\nand buy': {'ru': 'Создать оффер\nи купить'},
-  ' search...': {'ru': ' искать...'},
+  ' search...': {'en': ' \u{1F50E}', 'ru': ' \u{1F50E}'},
   //
 };
